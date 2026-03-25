@@ -15,7 +15,7 @@ Core Metrics Table
 
 | Confusion Matrix | F1-Confidence Curve |
 | :---: | :---: |
-| ![Confusion Matrix](results/readme/confusion_matrix_normalized.png) | ![F1 Curve](results/readme/BoxF1_curve.png) |
+| ![Confusion Matrix](results/confusion_matrix_normalized.png) | ![F1 Curve](results/BoxF1_curve.png) |
 
 Technical Stack
 Architecture: YOLOv8 (Ultralytics)
