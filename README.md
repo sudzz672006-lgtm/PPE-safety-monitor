@@ -46,7 +46,11 @@ venv_311\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-Note for GPU Users: The command above installs the standard CPU version of PyTorch. If you have an NVIDIA GPU and want to use it for faster inference, please follow the instructions at [pytorch.org](https://pytorch.org/) to install the version compatible with your CUDA version.
+### High-Performance Local Setup
+If you have an **NVIDIA RTX GPU** and want to run this monitor with hardware acceleration (60+ FPS), please follow our specialized installation guide:
+
+[View GPU Acceleration Guide (INSTALL.md)](./INSTALL.md)
+
 
 **3. Execution** Launch the Streamlit interface:
 ```bash
@@ -54,6 +58,8 @@ streamlit run app.py
 ```
 Note on Hardware: This application is optimized for NVIDIA GPUs using CUDA. If no GPU is detected, the system will automatically switch to CPU mode (inference may be slower).
 
+
 ## Live Demo
 Experience the monitor in action here: [ppe-compliance-monitor.streamlit.app](https://ppe-compliance-monitor.streamlit.app/)
 **Note:** The live web version operates on shared cloud CPUs. For real-time, high-performance inference using NVIDIA CUDA (RTX 50-series), please run the repository locally.
+
