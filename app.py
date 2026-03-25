@@ -4,6 +4,7 @@ from PIL import Image
 import cv2
 import numpy as np
 import os
+import torch
 
 # --- Page Configuration ---
 st.set_page_config(page_title="PPE Safety Monitor", layout="wide")
@@ -19,9 +20,10 @@ def load_model():
     if not os.path.exists(model_path):
         st.error(f"Error: {model_path} not found! Please place best.pt in the same folder as app.py")
         return None
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
     
-    return YOLO(model_path)
-
+    return YOLO(model_path).to(device)
+    
 model = load_model()
 
 # --- 2. Sidebar Controls ---
