@@ -37,7 +37,7 @@ Environment: Python 3.11+
 ## Installation and Local Development(Command Prompt)
 
 **1. Environment Setup** Create and activate a virtual environment on Windows:
-```powershell
+```batch
 python -m venv venv_311
 venv_311\Scripts\activate
 ```
@@ -46,8 +46,10 @@ venv_311\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
+Note for GPU Users: The command above installs the standard CPU version of PyTorch. If you have an NVIDIA GPU and want to use it for faster inference, please follow the instructions at [pytorch.org](https://pytorch.org/) to install the version compatible with your CUDA version.
 
 **3. Execution** Launch the Streamlit interface:
 ```bash
 streamlit run app.py
 ```
+Note on Hardware: This application is optimized for NVIDIA GPUs using CUDA. If no GPU is detected, the system will automatically switch to CPU mode (inference may be slower).
