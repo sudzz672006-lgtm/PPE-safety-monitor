@@ -60,6 +60,6 @@ Note on Hardware: This application is optimized for NVIDIA GPUs using CUDA. If n
 
 
 ## Live Demo
-Experience the monitor in action here: [ppe-compliance-monitor.streamlit.app](https://ppe-compliance-monitor.streamlit.app/)
+Experience the monitor in action here: [ppe-compliance-monitor.streamlit.app](https://ppe-safety-monitor-vm8qdfu6t3grt6mg9zcym8.streamlit.app/)
 **Note:** The live web version operates on shared cloud CPUs. For real-time, high-performance inference using NVIDIA CUDA (RTX 50-series), please run the repository locally.
 
